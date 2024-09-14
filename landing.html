@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Badminton Court Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar {
+            background-color: #000; /* Black background for navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important; /* White text color */
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #e2e2e2 !important; /* Lighter color on hover */
+        }
+        .hero {
+            background-image: url('btmn7.webp'); /* Background image for hero section */
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the image */
+            height: 100vh; /* Set height to 80% of the viewport height */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid #0056b3;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+        }
+        .btn-book {
+            margin-top: 20px;
+            background-color: #28a745;
+            border: none;
+        }
+        .btn-book:hover {
+            background-color: #218838;
+        }
+        .header-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .header-section img {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .faq-section {
+            background-color: #e9ecef;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-section {
+            padding: 40px 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 32%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .list-group-item {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .list-group-item:hover {
+            background-color: #f1f1f1;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #007bff;
+            color: white;
+        }
+        .accordion-button {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Badminton Booking</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#navbarnav">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="slot.html">Book Slot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Welcome to the Badminton Court Booking System</h1>
+    <p>Your one-stop solution to book badminton courts at our college.</p>
+    <p>Check availability, reserve your slots, and enjoy playing badminton with friends!</p>
+    <a href="slot.html" class="btn btn-light btn-lg btn-book">Book Slot</a>
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center">Why Choose Us?</h2>
+    <ul class="list-group">
+        <li class="list-group-item">✅ Easy online booking</li>
+        <li class="list-group-item">✅ Real-time availability</li>
+        <li class="list-group-item">✅ User-friendly interface</li>
+        <li class="list-group-item">✅ Enjoy badminton with friends and family</li>
+    </ul>
+
+    <div class="image-gallery">
+        <img src="btmn1.jpg" alt="Badminton Court" />
+        <img src="btmn2.jpeg" alt="Players in Action" />
+        <img src="btmn3.jpeg" alt="Badminton Rackets" />
+    </div>
+</div>
+
+<div class="faq-section mt-5" id="faq">
+    <h2 class="text-center">Frequently Asked Questions (FAQs)</h2>
+    <div class="container">
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What are the booking hours for the badminton court?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        The badminton court is available for booking from 10:00 AM to 7:00 PM on weekdays.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How do I cancel a booking?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        You can cancel your booking by going to your booking history and selecting the cancel option.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Are there any fees for booking the court?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        No, booking the badminton court is completely free for all college students.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact-section mt-5" id="contact">
+    <h2 class="text-center">Contact Us</h2>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<!-- Firebase JS SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script>
+    // Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCzxiHprGanqn3LS5BblMstvKamk3YDHQA",
+        authDomain: "mission-slot.firebaseapp.com",
+        projectId: "mission-slot",
+        storageBucket: "mission-slot.appspot.com",
+        messagingSenderId: "955637565938",
+        appId: "1:955637565938:web:ee7d46d493d38f05e9436b",
+        measurementId: "G-1KWDXR42LD"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    var db = firebase.firestore();
+
+    // Handle form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var message = document.getElementById('message').value;
+
+        db.collection('contacts').add({
+            name: name,
+            email: email,
+            message: message,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(() => {
+            alert('Your message has been sent!');
+            document.getElementById('contactForm').reset();
+        }).catch(error => {
+            console.error('Error writing document: ', error);
+        });
+    });
+</script>
+
+<!-- Include jQuery, Popper.js, and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
